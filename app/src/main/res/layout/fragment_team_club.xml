@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarteamclub"
+            style="@style/Toolbar"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_teamclub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="5"
+            />
+
+
+    </FrameLayout>
+
+
+
+
+<LinearLayout
+    android:paddingTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <Spinner
+        android:id="@+id/spnr_teammatch"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:textAlignment="center"
+        android:padding="8dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="10dp"
+        android:id="@+id/rcv_teamclub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+</RelativeLayout>
